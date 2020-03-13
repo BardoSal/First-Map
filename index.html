@@ -33,21 +33,7 @@
         <script src="data/municipal_1.js"></script>
         <script src="data/servicios_p_2.js"></script>
         <script>
-        var highlightLayer;
-        function highlightFeature(e) {
-            highlightLayer = e.target;
 
-            if (e.target.feature.geometry.type === 'LineString') {
-              highlightLayer.setStyle({
-                color: '#00aa8f',
-              });
-            } else {
-              highlightLayer.setStyle({
-                fillColor: '#00aa8f',
-                fillOpacity: 1
-              });
-            }
-        }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
         }).fitBounds([[19.217874124746906,-99.46850301884359],[19.52994801221056,-98.82969200085688]]);
